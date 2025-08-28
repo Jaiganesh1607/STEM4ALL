@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#10231c] dark group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#214a3c] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">STEM4All</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">Workshops</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Instructors</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Resources</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Community</a>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#019863] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Sign up</span>
+              </button>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#214a3c] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Log in</span>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap gap-2 p-4">
+              <a class="text-[#8ecdb7] text-base font-medium leading-normal" href="#">Workshops</a>
+              <span class="text-[#8ecdb7] text-base font-medium leading-normal">/</span>
+              <span class="text-white text-base font-medium leading-normal">Introduction to Robotics</span>
+            </div>
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Introduction to Robotics</p>
+                <p class="text-[#8ecdb7] text-sm font-normal leading-normal">
+                  Explore the fundamentals of robotics, including mechanics, electronics, and programming. Build and program your own mini-robot to navigate a simple maze.
+                </p>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Workshop Details</h3>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              This workshop is designed for students aged 14-18 with an interest in engineering and technology. No prior experience is required. Participants will learn about the
+              key components of a robot, how to assemble them, and how to write code to control their movements. The workshop culminates in a friendly competition where students
+              test their robots' navigation skills.
+            </p>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Instructor</h3>
+            <div class="flex p-4 @container">
+              <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+                <div class="flex gap-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARrw78Pcr2tGqWmj84BUupheYjBepT1CmHK5C9er0mCZ9j4Ai9dePOXfchEc8gyyDQrkuYvxKBvFEeDFjr5Wu2vB2Cc1ELYwOiCNYokfEl3sxs2KDmHZNS0dYkNK-q946Ycd055Al5TiMqhTFcVJfC3dNcwFjUQwvupArhWSK9iuqHhDB3JJqkzvr9OYp8IhfwygMY-nVZ7PZuxiMQfHA7VkmWr6BrDNXCjnoOuMqiTjNMIyPmniSx76JcfbvFqVu9a_MCZYiBAJI");'
+                  ></div>
+                  <div class="flex flex-col justify-center">
+                    <p class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Dr. Anya Sharma</p>
+                    <p class="text-[#8ecdb7] text-base font-normal leading-normal">Robotics Engineer &amp; Educator</p>
+                    <p class="text-[#8ecdb7] text-base font-normal leading-normal">
+                      Dr. Sharma has over 10 years of experience in robotics and has taught at several universities. She holds a PhD in Robotics from MIT and is passionate about
+                      making STEM education accessible to all students.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Schedule</h3>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#2f6a55] py-5">
+                <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Date</p>
+                <p class="text-white text-sm font-normal leading-normal">July 15, 2024</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#2f6a55] py-5">
+                <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Time</p>
+                <p class="text-white text-sm font-normal leading-normal">10:00 AM - 12:00 PM PST</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#2f6a55] py-5">
+                <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Duration</p>
+                <p class="text-white text-sm font-normal leading-normal">2 hours</p>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Materials</h3>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Participants will need access to a computer with internet connectivity and a basic robotics kit (provided upon registration). Detailed instructions on setting up the
+              kit will be provided before the workshop.
+            </p>
+            <div class="flex px-4 py-3 justify-start">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-[#019863] text-white text-base font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Join Live Session</span>
+              </button>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">FAQs</h3>
+            <div class="flex flex-col p-4 gap-3">
+              <details class="flex flex-col rounded-lg border border-[#2f6a55] bg-[#10231c] px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-white text-sm font-medium leading-normal">What is the age range for this workshop?</p>
+                  <div class="text-white group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#8ecdb7] text-sm font-normal leading-normal pb-2"></p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#2f6a55] bg-[#10231c] px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-white text-sm font-medium leading-normal">Do I need any prior experience?</p>
+                  <div class="text-white group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#8ecdb7] text-sm font-normal leading-normal pb-2"></p>
+              </details>
+              <details class="flex flex-col rounded-lg border border-[#2f6a55] bg-[#10231c] px-[15px] py-[7px] group">
+                <summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+                  <p class="text-white text-sm font-medium leading-normal">What materials are required?</p>
+                  <div class="text-white group-open:rotate-180" data-icon="CaretDown" data-size="20px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                      <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+                    </svg>
+                  </div>
+                </summary>
+                <p class="text-[#8ecdb7] text-sm font-normal leading-normal pb-2"></p>
+              </details>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Related Workshops</h3>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCzpprqZ7QfIdQCLlHVfbYPSXx2tLc6osEnI35zZQZYZ7AzLTsAU6hSZZx0PZRzqP6jMv13VpdzG5hyQecnf8q-PpYpC2u3QBtCOQWqVNxb4gSV138eBCJjo0teTSBr9TKCXJE0Ilx8xHBRGKLDWRbC15E98d8ljDkYQU75dFmLLEG1iqwd1M6VyQn9uy3vuJaOMD7VcELS0DlW_FUr6mp-uVMEVo4YI3CxyfWsXdZRVPRxMhycnai4fQTAg4mHQBgNJX8hAYb29yM");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Introduction to Coding</p>
+                    <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Learn the basics of coding with Python.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDP6Ev118sjm-GGSNBd69BHxUvdad9qsnAOdu52OExV4_M6dSvqYYGOvCMG_xopD-aomYUM8IPB2kh8azdJWjnGHadzmBCfD0VOvhe2a9BqJySTyx3ezh8pMtnhoq2AnlCh3hjFp2I4SLoGo0-6a8ZyHTVDQgascdid8OFb5YKURaN3lPnhHKHmaRlRG-CRjXWQQh5A1qbe5evsekceUk-lOFW8gyHDROUIRgyigTkAuS_QBK0LOMJVQRgkpyH9pFUwfhR-8pSHrVw");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Engineering Design Basics</p>
+                    <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Explore the principles of engineering design.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBASibAR3LsHJSMsQA6c4qzD1Zz_zX5s9pfG6wc72C2kK2dlRH0wTNNzzHYTo64Pn8APlbjJDPz66iasUOzW-6x86L_7cqqR2DGR0UlxGCDVLDG--umdU4gLK5hlbneG4Rsa9zugQ2pKYt9xWDRv--rIMEmJuoFUtfNli2LqCTrr3g6jC149_L7ldpLT8z-xXrtYd3L_58iX1v6CzWq_Vpo0c4bmIdUmI0V9CBfAG_ZglKMWSaa5Dr5FCsvvfLgRd8nZM5osug_n2g");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Advanced Robotics</p>
+                    <p class="text-[#8ecdb7] text-sm font-normal leading-normal">Build more complex robots and systems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
