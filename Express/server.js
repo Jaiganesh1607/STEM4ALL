@@ -17,16 +17,28 @@ app.use(express.json());
 // Health check
 app.get('/health', (_req, res) => res.json({ ok: true }));
 
-// Static files for certificates or assets
+// Static files for certificates and assets
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-// Auth routes (ADD THIS LINE)
+// Auth routes
 const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
+
+// Public routes (for landing page and workshop browsing)
+const publicRoutes = require('./routes/publicRoutes');
+app.use('/api/public', publicRoutes);
+
+// Student routes
+const studentRoutes = require('./routes/studentRoutes');
+app.use('/api/student', studentRoutes);
 
 // Instructor module routes
 const instructorRoutes = require('./routes/instructorRoutes');
 app.use('/api/instructor', instructorRoutes);
+
+//admin routes
+const adminRoutes = require('./routes/adminRoutes');
+app.use('/api/admin', adminRoutes);
 
 // 404 fallback
 app.use((req, res) => res.status(404).json({ message: 'Not Found' }));

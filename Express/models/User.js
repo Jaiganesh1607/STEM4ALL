@@ -32,11 +32,27 @@ const UserSchema = new mongoose.Schema(
       index: true,
     },
     approved: {
-      // Used for instructors; ignored for others
       type: Boolean,
       default: false,
       index: true,
     },
+    profile: {
+      phone: { type: String, trim: true },
+      school: { type: String, trim: true },
+      grade: { type: String, trim: true },
+      bio: { type: String, maxlength: 500, trim: true },
+      avatar: { type: String, trim: true },
+      dateOfBirth: { type: Date },
+      location: { type: String, trim: true }, // ✅ Added missing field
+      interests: { type: [String], default: [] }, // ✅ Added missing field
+      address: {
+        street: String,
+        city: String,
+        state: String,
+        zipCode: String,
+        country: String
+      }
+    }
   },
   { timestamps: true }
 );

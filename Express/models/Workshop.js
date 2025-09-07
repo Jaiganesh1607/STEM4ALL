@@ -29,12 +29,28 @@ const WorkshopSchema = new mongoose.Schema(
       trim: true,
       default: null,
     },
+    // NEW: File upload support
+    resourceFiles: [{
+      filename: String,
+      originalName: String,
+      filepath: String,
+      filesize: Number,
+      mimetype: String,
+      uploadedAt: { type: Date, default: Date.now }
+    }],
     createdBy: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
       required: true,
       index: true,
     },
+    // NEW: Workshop status
+    status: {
+      type: String,
+      enum: ['draft', 'published', 'completed', 'cancelled'],
+      default: 'published',
+      index: true
+    }
   },
   { timestamps: true }
 );
